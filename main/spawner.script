@@ -1,0 +1,11 @@
+function init(self)
+	timer.delay(1.5, true, function()
+		local spawn_x = math.random(50, 1030)
+
+		local spawn_y = 2000
+
+		local pos = vmath.vector3(spawn_x, spawn_y, 0.1)
+
+		factory.create("#enemy_factory", pos)
+	end)
+end
